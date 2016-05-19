@@ -1,13 +1,15 @@
 header
   background-block()
   background $black
-  // padding-bottom $baseline*8v
 
   .hero
     position relative
     width 100%
     max-height 80vh
-    min-height 920px
+    min-height 790px
+
+    @media $tabliet
+      min-height 920px
 
     .ace
       display none
@@ -75,8 +77,8 @@ header
 
     .mob
       display block
-      position absolute
-      top 75px
+      // position absolute
+      // top 75px
       width 100%
       text-align center
       margin-bottom $baseline*5
@@ -93,7 +95,7 @@ header
 
     .intro
       text-align center
-      margin-top 220px
+      margin-top 140px
       width 100%
 
       @media $tablet
@@ -112,7 +114,7 @@ header
 
       .anybeast
         display block
-        margin 0 auto 53px
+        margin 0 auto 40px
         max-width 200px
 
         @media $tablet
@@ -128,7 +130,7 @@ header
 
       .illo
         max-width 250px
-        margin -28px auto $baseline*5.5 auto
+        margin -28px auto 22px auto
         display block
 
         @media $tablet

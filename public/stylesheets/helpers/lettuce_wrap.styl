@@ -110,6 +110,9 @@ col($columns, $offset = 0)
     // padding-right $grid-gutter
 
   if $offset > 0
+    @media $phone
+      margin 0 ((($offset / $grid-total-columns) * 100)%) - 2.94117%
+
     @media $tablet
       margin-left ((($offset / $grid-total-columns) * 100)%) - 2.94117%
 
