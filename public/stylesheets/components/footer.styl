@@ -1,0 +1,70 @@
+footer
+  background-block()
+  background $light-black
+  padding 35px 0
+  
+  & > .content-block
+    content-block()
+    justify-content(space-around)
+    align-items(center)
+    
+    .logo
+      
+      @media $tablet
+        col(2)
+        
+      @media $desktop
+        col(2)
+
+      & > a
+        display block
+        height 25px
+        min-width 150px
+        background-image url(../images/anybeast-logo@2x.png)
+        background-repeat no-repeat
+        background-position center
+        background-size contain
+        
+    // Footer Links
+    
+    // .link-list
+    //   flexbox()
+    //   flex-shrink 1
+    //   border 1px solid blue
+    //   
+    //   & > li
+    //     margin-right 25px
+    //     &:first-child
+    //       margin-left 20px
+    //     &:last-child
+    //       margin-right 0
+        
+    .supplement
+      col(12)
+      margin 25px 0
+      flexbox()
+      justify-content(center)
+      flex-wrap nowrap
+
+
+      @media $tablet
+        col(6)
+        justify-content(flex-end)
+      
+      & > li
+        color $faint-grey
+        margin-right 20px
+        
+        &:last-child
+          margin-right 0
+      
+    a
+      text-decoration none
+      color $faint-grey
+      
+    a:hover
+      color $white
+      
+    .copyright
+      display block
+      white-space nowrap

@@ -1,0 +1,77 @@
+#clouds
+  background url('../images/clouds@2x.png')
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+  position fixed
+  left 0
+  right 0 
+  z-index -1
+  min-height 80vh
+  bottom -40%
+
+  @media $tablet
+    background-size cover
+    left 0
+    right 0
+    bottom -45%
+    
+  @media $desktop
+    min-height 100vh
+    background-size contain
+    left 5%
+    right 5% 
+    bottom -65%
+
+#home-welcome
+  background-block()
+
+  & > div
+    content-block(flex-start,flex-start,center)
+    height 100vh
+    flex-wrap wrap
+              
+    .statement-contain
+      col(10,1)
+      @media $desktop
+        col(8,2)
+      
+      & > p
+
+        @media $phone
+          display none
+
+        @media $tablet
+          display block
+          color $gold
+          font-size 14px
+          text-align center
+          margin-bottom 50px
+      
+      h1
+        font-size 48px
+        line-height 1.15em
+        text-align center
+        transition all 0.5s ease
+        margin-bottom 125px
+        
+        @media $tablet
+          font-size 68px
+
+        @media $desktop
+          font-size 68px
+
+  .arrow-down
+    display block
+    margin-bottom 40px
+    width 100%
+  
+    & > a
+      display block
+      min-width 66px
+      min-height 40px
+      background url('../images/arrow-head-down.svg')
+      background-repeat no-repeat
+      background-size contain
+      background-position center
+    
