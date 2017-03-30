@@ -3,14 +3,46 @@
 @import 'helpers/colors'
 @import 'helpers/type'
 @import 'helpers/fonts'
+@import 'helpers/flickity'
 
 @import 'components/header'
+@import 'components/menu'
+@import 'components/footer'
+
+@import 'components/home/welcome'
+@import 'components/home/about'
+@import 'components/home/objects'
+// @import 'components/home/services'
+// @import 'components/home/clients'
+@import 'components/home/contact'
+
+
+@import 'components/work/case-studies'
+@import 'components/work/next-project'
+
+
 
 html
-  background $black
   width 100%
 
 body
   font-family $font-family1
   font-weight $type-light
   color $white
+  
+  ::selection
+    color $white
+    background $black
+    
+p
+  line-height 1.2rem
+    
+.block-link
+  display block
+  cursor pointer
+    
+.index
+  background $black
+
+.neo, .mociun, .keurig
+  background $black

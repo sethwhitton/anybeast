@@ -1,0 +1,306 @@
+// Individual hero treatments
+
+.neo-hero
+  background radial-gradient(farthest-side at 50% 100%, #6557A4, #251D42)
+
+.mociun-hero
+  background linear-gradient(to bottom left, #F2E3C9, #E07761)
+  background url('../images/mociun/mociun-hero-bkg@2x.png') center no-repeat
+  background-size cover
+  
+.keurig-hero
+    background linear-gradient(to bottom, #2C2C2C, #2D2D2D)
+
+.core-statement, .full-column-image, .two-column-split, .multi-image, .end-statement
+  content-block()
+
+// -.-.-.-.-.-.-.-.-.-.- // 
+ 
+#hero
+  background-block()
+  
+  .container-flush
+    text-align center
+    content-block()
+    margin-bottom 75px  
+  
+  .container
+    text-align center
+    content-block()
+    margin-bottom 75px
+
+    @media $tablet
+      margin-bottom 150px
+    
+  h1
+    col(12)
+    font-size 35px
+    color $white
+    padding 50px 0 20px
+    line-height 1.2
+
+    @media $tablet
+      col(8,2)
+      font-size 45px
+      padding 70px 0 50px
+
+    @media $desktop
+      font-size 60px
+      padding 80px 0 65px
+
+   .hero-image
+     col(12)
+     margin-bottom -50px
+     
+     @media $tablet
+      col(12)
+      margin-bottom -75px
+              
+      @media $desktop
+       col(10,1)
+       margin-bottom -125px
+
+   .hero-image-flush
+     col(12)
+     
+     @media $tablet
+      col(12)
+              
+      @media $desktop
+       col(8,2)
+
+.core-statement   
+  col(12)
+   
+  h2
+    font-size 25px
+    text-align center
+    line-height 1.4em
+    padding 40px 0 10px
+
+    @media $tablet
+      col(10,2)
+      font-size 40px
+
+    @media $desktop
+      col(10,2)
+      font-size 40px
+      line-height 1.3em
+
+    &:after
+      content ''
+      display block
+      border-bottom 1px solid $gold
+      max-width 200px
+      height 1px
+      margin 25px auto 75px auto
+
+      @media $tablet
+        max-width 300px
+        margin 50px auto 125px auto
+
+.full-column-image
+  .gallery
+    @media $desktop
+      col(12)
+    
+.two-column-split
+  content-block(flex-start, flex-start, center)
+  margin 75px 0
+
+  @media $tablet
+    margin-top 100px
+
+  @media $desktop
+    margin 150px 0
+    
+.column-a
+  col(12)
+
+  @media $tablet
+    col(10,2)
+
+  @media $desktop
+    col(5,2)
+    flex-wrap wrap
+    height 100%
+
+.column-b
+  display none
+  
+  @media $desktop
+    col(5)
+    display block
+
+// Class for text-only columns
+
+.two-column-text
+  content-block()
+  margin 75px 0
+
+  @media $tablet
+    margin-top 100px
+
+  @media $desktop
+    margin 125px 0 90px
+
+  .column-text-a
+    col(12)
+
+    @media $tablet
+      col(10,2)
+
+    @media $desktop
+      col(5,2)
+      flex-wrap wrap
+      height 100%
+
+  .column-text-b
+    col(12)
+    
+    @media $tablet
+      col(10,2)
+    
+    @media $desktop
+      col(5)
+      display block
+
+.wrapper
+  min-height 200px
+  
+  & > div
+    @media $desktop
+      padding 0 10% 0 0
+
+    h4
+      font-size 14px
+      text-transform uppercase
+      color $gold
+      letter-spacing 1px
+      margin-bottom 15px
+
+    h3
+      font-size 26px
+      color $white
+      margin-bottom 15px
+
+    p
+      color $silver
+      font-size 18px
+      line-height 1.7em
+      
+      @media $desktop
+        max-width 390px
+
+  & > div:first-child
+    margin-bottom 50px
+
+
+  img
+    max-width 300px
+    margin 0 auto
+
+    @media $tablet
+      max-width 500px
+
+    @media $desktop
+      width 100%
+
+.multi-image
+  margin 75px 0
+
+  @media $tablet
+    margin 100px 0
+
+  @media $desktop
+    margin 150px 0
+    
+  .gallery
+    col(12)
+
+    @media $tablet
+      flexbox()
+      col(10,2)
+
+    @media $desktop
+      col(10,2)
+
+    .large
+      margin-bottom 20px
+
+      @media $tablet
+        col(6)
+        margin-bottom none
+
+    .small
+      @media $tablet
+        col(6)
+        margin-top 140px
+
+      @media $desktop
+        margin-top 20%
+
+      & > img:first-child
+        margin-bottom 20px
+
+.full-bleed
+  background-block()
+
+  img
+    margin 0 auto
+    
+.neo-full-bleed
+    background linear-gradient(#251D42, #463B73)
+
+.end-statement
+  h2
+    col(12)
+    font-size 25px
+    text-align center
+    line-height 1.4em
+    margin 75px 0
+    
+    @media $tablet
+      col(10,1)
+      font-size 40px
+      line-height 1.3em
+      margin 125px 0
+        
+    @media $desktop
+      col(10,1)
+
+    &:after
+      content ''
+      display block
+      border-bottom 1px solid $gold
+      max-width 200px
+      height 1px
+      margin 25px auto 0 auto
+
+      @media $tablet
+        max-width 300px
+        margin 50px auto 0 auto
+    
+.caption
+  background $light-black
+  color $faint-grey
+  padding 15px 20px 20px
+  
+  @media $desktop
+    padding 15px 20px 20px
+    max-width 1200px
+    margin 10px auto 0
+    
+  & > p
+    color $faint-grey
+
+    & > .bold
+      font-weight bold
+      color $white
+
+.pusher
+  col(12)
+  height 75px
+  
+
+  

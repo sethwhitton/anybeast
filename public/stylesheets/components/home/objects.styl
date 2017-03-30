@@ -1,0 +1,213 @@
+#home-objects
+  background-block()
+
+  & > .content-block
+    content-block(flex-start, flex-start, center)
+
+    .object-wide
+      col(12)
+      margin-bottom 75px  
+            
+      .neo-static, .lincoln-static
+        & > div
+          position relative
+    
+    .img-full
+      display none
+      
+      @media $tablet
+        display block
+      
+    .img-mobile    
+      display block
+      
+      @media $tablet
+        display none
+    
+    .columns     
+      col(10,1)
+      content-block(flex-start, flex-start, center)
+      flex-wrap wrap
+      flex-direction row
+      
+      .object-tall
+        col(12)
+        margin-bottom 50px
+        
+        @media $tablet
+          col(10,1)
+          
+        @media $desktop
+          col(6)
+
+        // Re-order of content for tablet/mobile stacking
+        &:nth-child(1)
+          order 1
+          
+        &:nth-child(2)
+          order 4      
+          @media $desktop
+            order 3
+
+        &:nth-child(3)
+          order 2
+          @media $desktop
+            order 2
+
+        &:nth-child(4)
+          order 3
+          @media $desktop
+            order 4
+  
+        .mociun-static, .keurig-static
+          & > div
+            position relative
+  
+      .broadside
+        flexbox()
+        justify-content(center)
+        align-items(center)
+                  
+        & > div
+          border 7px solid $silver
+          background-color $black
+          color $white
+          text-align center
+          font-size 14px
+          text-transform uppercase
+          letter-spacing 1px
+                      
+          ul
+            display block
+            padding 50px 40px
+            
+            li
+              margin 25px 0
+
+              &:first-child
+                color $silver
+                margin-bottom 25px
+                margin-top 5px
+                
+            .arrow-butt-down
+              display block
+              height 40px
+              width 15px
+              background url('../images/icn_arrow-end@2x.png')
+              background-repeat no-repeat
+              background-size contain
+              background-position center
+              margin 0 auto
+              
+            .arrow-head-down
+              display block
+              height 40px
+              width 15px
+              background url('../images/icn_arrow-head@2x.png')
+              background-repeat no-repeat
+              background-size contain
+              background-position center
+              margin 0 auto
+
+      .testimonial
+        flexbox()
+        justify-content(center)
+        align-items(center)
+        
+        & > div
+          border 7px solid $silver
+          background-color $black
+          color $silver
+          font-size 14px
+          text-transform uppercase
+          letter-spacing 1px
+          text-align center
+          max-width 380px
+          
+          ul
+            display block
+            padding 60px 40px
+            
+            li
+              margin 10px 0
+              
+              &:nth-child(2)
+                font-size 20px
+                text-transform none
+                color $white
+                line-height 1.5em
+                margin 42px 0
+                letter-spacing 0
+
+      .availability
+        flexbox()
+        justify-content(center)
+        align-items(center)
+        
+        & > div
+          max-width 390px
+          
+          @media $desktop
+            margin-right 30px
+          
+          img
+            margin-bottom 25px
+          
+          h2
+            font-size 25px
+            text-align center
+            line-height 1.4em
+            margin-bottom 5px
+          p
+            color $silver
+            font-size 14px
+            text-transform uppercase
+            letter-spacing 1px
+            text-align center
+
+.border
+  display none
+    
+  @media $tablet
+    display block
+    position absolute
+    top 10px
+    left 10px
+    right 10px
+    bottom 10px
+    border 1px solid $silver
+    z-index 2
+
+.border-micro
+  position absolute
+  top 5px
+  left 5px
+  right 5px
+  bottom 5px
+  border 1px solid $silver
+  z-index 2 
+  
+  @media $phone
+    display block
+    
+  @media $tablet
+    display none
+
+.captioned
+  text-transform uppercase
+  margin-top 20px
+  text-align center
+  font-size 14px
+  letter-spacing 1px
+  
+  p
+    display inline-block
+    margin-right 15px
+    color $white
+    & > a
+      color $white
+      text-decoration none
+      & > span
+        color $silver
+  .silver
+    color $silver
