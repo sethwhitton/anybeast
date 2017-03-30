@@ -1,0 +1,1 @@
+#home-contact > .content-block{height:100vh}#home-contact .say-hey{border-bottom:1px solid $gold;text-align:center;font-size:32px;line-height:1.6em;margin-bottom:25px;text-decoration:none;color:#fff;display:inline-block}@media $tablet{#home-contact .say-hey{text-align:left;font-size:40px;line-height:1.4em}}@media $desktop{#home-contact .say-hey{font-size:44px;line-height:1.5em}}

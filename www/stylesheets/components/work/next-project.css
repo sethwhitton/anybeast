@@ -1,0 +1,1 @@
+#next_project .project{margin-bottom:25px}@media $tablet{#next_project .project{margin-bottom:25px}#next_project .project:last-child{margin-bottom:75px}}@media $desktop{#next_project .project{margin-bottom:75px}}#next_project .project > a{display:block;position:relative}
