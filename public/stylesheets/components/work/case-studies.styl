@@ -23,7 +23,7 @@
     text-align center
     content-block()
     margin-bottom 75px  
-    
+  
   .container
     text-align center
     content-block()
@@ -48,35 +48,26 @@
       font-size 60px
       padding 80px 0 65px
 
-    .hero-image
-      col(12)
-      margin-bottom -50px
+  .hero-image
+    col(12)
+    margin-bottom -50px
 
-      @media $tablet
+    @media $tablet
       col(12)
       margin-bottom -75px
-            
-      @media $desktop
+          
+    @media $desktop
       col(10,1)
       margin-bottom -125px
-
-      & > img
-        margin 0 auto
-        max-width 1200px
-    
-    .hero-image-flush
-      col(12)
-
-      @media $tablet
-      col(12)
-              
-      @media $desktop
-      col(8,2)
-
-      & > img
-        margin 0 auto
-        max-width 1200px
   
+  .hero-image-flush
+    col(12)
+
+    @media $tablet
+      col(12)
+            
+    @media $desktop
+      col(8,2)
 
 .core-statement   
   col(12)
