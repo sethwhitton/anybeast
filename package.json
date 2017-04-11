@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Marketing website",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "4.15.2",
     "harp": "^0.20.3"
   },
   "engines": {
